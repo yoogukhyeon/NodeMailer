@@ -1,0 +1,20 @@
+{
+  "name": "nodejsNodeMailer",
+  "version": "1.0.0",
+  "description": "NodeMailer Project",
+  "main": "nodemailer.js",
+  "scripts": {
+    "start": "nodemon nodemailer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoogukhyeon/NodeMailer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoogukhyeon/NodeMailer/issues"
+  },
+  "homepage": "https://github.com/yoogukhyeon/NodeMailer#readme"
+}
