@@ -18,6 +18,9 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 
+router.get('/', (req, res) => {
+    res.render('index')
+})
 
 
 router.route('/mail').get((req, res) => {
