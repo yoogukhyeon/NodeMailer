@@ -18,6 +18,25 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 // app.engine('html', require('ejs').renderFile);
 
+router.route('/index.html').get((req, res) => {
+    res.writeHead(200, {'content-type' : 'text/html'});
+    res.end(`<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <style> 
+            a {display:block; width: 100%; height: 50px; line-height: 50px; text-align: center; font-size: 30px; font-weight: bold; color: yellow; background-color:#222}
+        </style>
+    </head>
+    <body>
+        <a href="http://127.0.0.1:3000/mail">NodeJs NodeMailer Project</a>
+    </body>
+    </html>`)
+})
+
 router.route('/mail').get((req, res) => {
     res.render('mail')
 })
