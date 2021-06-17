@@ -16,7 +16,7 @@ app.use('/', router);
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
+// app.engine('html', require('ejs').renderFile);
 
 router.route('/').get((req, res) => {
     res.render('mail')
