@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/yoogukhyeon/NodeMailer/issues"
   },
-  "homepage": "https://github.com/yoogukhyeon/NodeMailer#readme"
+  "homepage": "https://github.com/yoogukhyeon/NodeMailer#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.1"
+  }
 }
