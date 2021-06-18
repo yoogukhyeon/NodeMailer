@@ -13,7 +13,6 @@ const port = 3000;
 const router = express.Router();
 
 app.use(serveStatic(path.join(__dirname, 'public')));
-
 app.use(bodyParser.urlencoded({extended: false}));
 
 
