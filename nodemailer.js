@@ -5,20 +5,27 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 const ejs = require('ejs');
-
+const serveStatic = require('serve-static');
+const path = require('path');
 
 const app = express();
 const port = 3000;
 const router = express.Router();
 
+app.use(serveStatic(path.join(__dirname, 'public')));
+
 app.use(bodyParser.urlencoded({extended: false}));
-app.use('/', router);
+
+
+
+app.use('/', router)
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 
-router.get('/', (req, res) => {
+
+router.get('/',  (req, res) => {
     res.render('index')
 })
 
