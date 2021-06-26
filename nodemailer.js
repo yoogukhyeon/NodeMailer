@@ -13,8 +13,9 @@ const app = express();
 const port = 3000;
 const router = express.Router();
 
-app.use(serveStatic(path.join(__dirname, 'public')));
-app.use(bodyParser.urlencoded({extended: false}));
+const routes = require('./routes')
+app.use('/' , routes)
+
 
 
 
@@ -69,7 +70,7 @@ router.route('/mail_ok').post((req, res) => {
         }else{
             console.log(infor)        
         }
-    })
+     })
 
 
     const userinfo = {userid : userid, sendmail : sendmail, touserid : touserid , tomail : tomail , title : title, content : content}
